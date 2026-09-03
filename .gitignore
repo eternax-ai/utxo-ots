@@ -1,0 +1,28 @@
+# OS / editor
+.DS_Store
+*.swp
+*~
+
+# Rust
+implementation/target/
+**/Cargo.lock.bak
+
+# Bitcoin Core datadir & local secrets
+artifacts/regtest/bitcoincore/
+artifacts/regtest/*.master
+artifacts/regtest/demo.master
+**/*.cookie
+**/*.pid
+
+# Local tx hex dumps may contain nothing secret, but keep node data out
+*.dat
+*.log
+
+# Env / keys
+.env
+.env.*
+*.pem
+*.key
+
+__pycache__/
+*.pyc

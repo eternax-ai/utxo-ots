@@ -1,0 +1,237 @@
+{
+  "reference_parameter_set": {
+    "digest_bits": 384,
+    "radix": 4,
+    "logical_digits": 192,
+    "digits_per_shard": 16,
+    "shard_count": 12,
+    "approx_witness_bytes": 34620,
+    "approx_base_bytes": 512,
+    "approx_weight": 36670,
+    "approx_vbytes": 9168,
+    "weight_ok": true,
+    "dust_per_shard_sats": 330,
+    "min_total_setup_sats": 3960,
+    "shard": {
+      "digits_per_shard": 16,
+      "alternatives": 4,
+      "script_size": 2305,
+      "counted_opcodes": 192,
+      "witness_stack_items": 48,
+      "max_witness_item_size": 32,
+      "script_size_ok": true,
+      "opcode_ok": true,
+      "stack_items_ok": true,
+      "item_size_ok": true,
+      "opcode_headroom": 9,
+      "script_headroom": 1295,
+      "stack_headroom": 52
+    }
+  },
+  "max_digits_per_shard_radix4": {
+    "digits_per_shard": 16,
+    "alternatives": 4,
+    "script_size": 2305,
+    "counted_opcodes": 192,
+    "witness_stack_items": 48,
+    "max_witness_item_size": 32,
+    "script_size_ok": true,
+    "opcode_ok": true,
+    "stack_items_ok": true,
+    "item_size_ok": true,
+    "opcode_headroom": 9,
+    "script_headroom": 1295,
+    "stack_headroom": 52
+  },
+  "packing_table_sha384_radix4": [
+    {
+      "digits_per_shard": 1,
+      "even_pack": true,
+      "shard_count": 192,
+      "script_size": 145,
+      "opcodes": 12,
+      "stack_items": 3,
+      "opcode_headroom": 189,
+      "approx_weight": 66706,
+      "approx_vbytes": 16677
+    },
+    {
+      "digits_per_shard": 2,
+      "even_pack": true,
+      "shard_count": 96,
+      "script_size": 289,
+      "opcodes": 24,
+      "stack_items": 6,
+      "opcode_headroom": 177,
+      "approx_weight": 50866,
+      "approx_vbytes": 12717
+    },
+    {
+      "digits_per_shard": 3,
+      "even_pack": true,
+      "shard_count": 64,
+      "script_size": 433,
+      "opcodes": 36,
+      "stack_items": 9,
+      "opcode_headroom": 165,
+      "approx_weight": 45458,
+      "approx_vbytes": 11365
+    },
+    {
+      "digits_per_shard": 4,
+      "even_pack": true,
+      "shard_count": 48,
+      "script_size": 577,
+      "opcodes": 48,
+      "stack_items": 12,
+      "opcode_headroom": 153,
+      "approx_weight": 42754,
+      "approx_vbytes": 10689
+    },
+    {
+      "digits_per_shard": 5,
+      "even_pack": false,
+      "shard_count": 39,
+      "script_size": 721,
+      "opcodes": 60,
+      "stack_items": 15,
+      "opcode_headroom": 141,
+      "approx_weight": 41773,
+      "approx_vbytes": 10444
+    },
+    {
+      "digits_per_shard": 6,
+      "even_pack": true,
+      "shard_count": 32,
+      "script_size": 865,
+      "opcodes": 72,
+      "stack_items": 18,
+      "opcode_headroom": 129,
+      "approx_weight": 40050,
+      "approx_vbytes": 10013
+    },
+    {
+      "digits_per_shard": 7,
+      "even_pack": false,
+      "shard_count": 28,
+      "script_size": 1009,
+      "opcodes": 84,
+      "stack_items": 21,
+      "opcode_headroom": 117,
+      "approx_weight": 40094,
+      "approx_vbytes": 10024
+    },
+    {
+      "digits_per_shard": 8,
+      "even_pack": true,
+      "shard_count": 24,
+      "script_size": 1153,
+      "opcodes": 96,
+      "stack_items": 24,
+      "opcode_headroom": 105,
+      "approx_weight": 38698,
+      "approx_vbytes": 9675
+    },
+    {
+      "digits_per_shard": 9,
+      "even_pack": false,
+      "shard_count": 22,
+      "script_size": 1297,
+      "opcodes": 108,
+      "stack_items": 27,
+      "opcode_headroom": 93,
+      "approx_weight": 39440,
+      "approx_vbytes": 9860
+    },
+    {
+      "digits_per_shard": 10,
+      "even_pack": false,
+      "shard_count": 20,
+      "script_size": 1441,
+      "opcodes": 120,
+      "stack_items": 30,
+      "opcode_headroom": 81,
+      "approx_weight": 39462,
+      "approx_vbytes": 9866
+    },
+    {
+      "digits_per_shard": 11,
+      "even_pack": false,
+      "shard_count": 18,
+      "script_size": 1585,
+      "opcodes": 132,
+      "stack_items": 33,
+      "opcode_headroom": 69,
+      "approx_weight": 38764,
+      "approx_vbytes": 9691
+    },
+    {
+      "digits_per_shard": 12,
+      "even_pack": true,
+      "shard_count": 16,
+      "script_size": 1729,
+      "opcodes": 144,
+      "stack_items": 36,
+      "opcode_headroom": 57,
+      "approx_weight": 37346,
+      "approx_vbytes": 9337
+    },
+    {
+      "digits_per_shard": 13,
+      "even_pack": false,
+      "shard_count": 15,
+      "script_size": 1873,
+      "opcodes": 156,
+      "stack_items": 39,
+      "opcode_headroom": 45,
+      "approx_weight": 37717,
+      "approx_vbytes": 9430
+    },
+    {
+      "digits_per_shard": 14,
+      "even_pack": false,
+      "shard_count": 14,
+      "script_size": 2017,
+      "opcodes": 168,
+      "stack_items": 42,
+      "opcode_headroom": 33,
+      "approx_weight": 37728,
+      "approx_vbytes": 9432
+    },
+    {
+      "digits_per_shard": 15,
+      "even_pack": false,
+      "shard_count": 13,
+      "script_size": 2161,
+      "opcodes": 180,
+      "stack_items": 45,
+      "opcode_headroom": 21,
+      "approx_weight": 37379,
+      "approx_vbytes": 9345
+    },
+    {
+      "digits_per_shard": 16,
+      "even_pack": true,
+      "shard_count": 12,
+      "script_size": 2305,
+      "opcodes": 192,
+      "stack_items": 48,
+      "opcode_headroom": 9,
+      "approx_weight": 36670,
+      "approx_vbytes": 9168
+    }
+  ],
+  "limits": {
+    "MAX_OPS_PER_SCRIPT": 201,
+    "MAX_STANDARD_P2WSH_SCRIPT_SIZE": 3600,
+    "MAX_STANDARD_P2WSH_STACK_ITEMS": 100,
+    "MAX_STANDARD_P2WSH_STACK_ITEM_SIZE": 80,
+    "MAX_STANDARD_TX_WEIGHT": 400000
+  },
+  "per_digit_breakdown": {
+    "commitment_push_bytes": 132,
+    "non_push_opcodes": 12,
+    "serialized_bytes": 144,
+    "note": "16 digits + OP_TRUE => script_size 2305, opcodes 192"
+  }
+}
