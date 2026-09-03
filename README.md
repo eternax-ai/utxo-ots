@@ -4,7 +4,7 @@
 
 You create 12 native P2WSH outputs (the public key). To sign a message, you spend them and reveal one preimage per digest digit. Bitcoin consensus checks the openings; an external verifier checks that the branch vector encodes the message. Publication can be one aggregate transaction or a **fragmented set of spends** (so a harvested shard cannot permanently DoS the signature).
 
-> This is **not** a post-quantum Bitcoin *payment* signature (unlike QSB/Heilman). Consensus does not bind branches to the spending transaction. Copied witnesses can move value to other outputs; the detached message stays the same.
+> This is **not** a post-quantum Bitcoin *payment* signature (unlike QSB/Heilman). Consensus does not bind branches to the spending transaction. Copied witnesses can move value to other outputs; the detached message stays the same. Whether that is doable with this construction is an open question.
 
 ## Quick demo (regtest)
 
@@ -53,9 +53,6 @@ scripts/regtest_demo.sh
 artifacts/           local demo outputs (gitignored node datadir)
 ```
 
-## Tweet / one-liner
-
-See [`TWEET.md`](./TWEET.md).
 
 ## License
 
