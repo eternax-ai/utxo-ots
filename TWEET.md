@@ -6,7 +6,7 @@ UTXO-OTS: post-quantum *attestations* on Bitcoin today — standard P2WSH shards
 
 Not a PQ payment signature (consensus doesn’t bind the message). It *is* a ledger-finalized one-time hash signature with fragmented publication so witness harvesting can’t permanently kill it.
 
-Regtest demo + Rust impl: <REPO_URL>
+Regtest demo + Rust impl: https://github.com/eternax-ai/utxo-ots
 
 ## Slightly longer
 
@@ -22,7 +22,7 @@ Idea: put a generalized Lamport one-time key in 12 native P2WSH outputs. Spend t
 Single-use seals aren’t new (Todd/RGB). The thing we’re shipping is the concrete P2WSH composition + measurements + state/adversarial harness.
 
 `./scripts/regtest_demo.sh`
-<REPO_URL>
+https://github.com/eternax-ai/utxo-ots
 
 ## Disclaimer line (pin or reply)
 
