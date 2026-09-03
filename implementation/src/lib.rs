@@ -1,4 +1,4 @@
-//! Spend-to-Sign: ledger-finalized hash OTS via standard P2WSH shards.
+//! UTXO-OTS: ledger-finalized hash OTS via standard P2WSH shards.
 //!
 //! Bitcoin consensus verifies hash-preimage openings. An external verifier
 //! checks that opened branches encode the message digest. This is not a

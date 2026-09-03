@@ -3,11 +3,11 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-DATADIR="${STS_DATADIR:-$ROOT/artifacts/regtest/bitcoincore}"
+DATADIR="${UTXO_OTS_DATADIR:-$ROOT/artifacts/regtest/bitcoincore}"
 ART="$ROOT/artifacts/regtest"
-MASTER="${STS_MASTER:-00112233445566778899aabbccddeeff}"
-SHARD_SATS="${STS_SHARD_SATS:-10000}"
-MSG="${STS_MESSAGE:-spend-to-sign open-source demo}"
+MASTER="${UTXO_OTS_MASTER:-00112233445566778899aabbccddeeff}"
+SHARD_SATS="${UTXO_OTS_SHARD_SATS:-10000}"
+MSG="${UTXO_OTS_MESSAGE:-utxo-ots open-source demo}"
 
 mkdir -p "$ART" "$DATADIR"
 cd "$ROOT/implementation"

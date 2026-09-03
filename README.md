@@ -1,4 +1,4 @@
-# Spend-to-Sign
+# UTXO-OTS
 
 **Bitcoin-ledger-finalized one-time signatures using only SHA-256 hashlocks and standard P2WSH — no new opcodes, no `CHECKSIG`, no soft fork.**
 

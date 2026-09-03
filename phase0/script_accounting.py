@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact P2WSH resource accounting for Spend-to-Sign digit shards.
+"""Exact P2WSH resource accounting for UTXO-OTS digit shards.
 
 Serializes the nested-IF commitment tree from RESEARCH_PLAN.md and reports
 consensus/policy metrics. No Bitcoin Core dependency: byte layout matches
@@ -169,7 +169,7 @@ class ParameterSetMetrics:
     min_total_setup_sats: int
 
 
-def fake_commitments(digits: int, alternatives: int, seed: bytes = b"spend-to-sign") -> List[List[bytes]]:
+def fake_commitments(digits: int, alternatives: int, seed: bytes = b"utxo-ots") -> List[List[bytes]]:
     out: List[List[bytes]] = []
     for i in range(digits):
         row = []

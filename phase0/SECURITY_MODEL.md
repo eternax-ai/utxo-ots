@@ -2,7 +2,7 @@
 
 ## Three properties (do not collapse them)
 
-Spend-to-Sign validity is a conjunction of three separable properties. Prior
+UTXO-OTS validity is a conjunction of three separable properties. Prior
 art already names pieces of this split (Lamport unforgeability; Todd
 single-use seals; RGB/client-side validation). The contribution is to keep
 them formally apart for this Bitcoin encoding.

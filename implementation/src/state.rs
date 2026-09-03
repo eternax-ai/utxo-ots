@@ -53,7 +53,7 @@ impl BankRecord {
             key_nonce_hex: key_nonce_hex.into(),
             setup_txid_hex: None,
             first_vout: None,
-            message_domain_tag: "spend-to-sign/message/v1".to_string(),
+            message_domain_tag: "utxo-ots/message/v1".to_string(),
             exposed_message_hash_hex: None,
         }
     }

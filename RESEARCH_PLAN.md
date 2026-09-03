@@ -1,4 +1,4 @@
-# Spend-to-Sign: Research and Implementation Plan
+# UTXO-OTS: Research and Implementation Plan
 
 ## Working claim
 
@@ -111,7 +111,7 @@ For every logical digit \(i \in \{0,\ldots,191\}\) and choice
 \[
     s_{i,j} =
     \operatorname{HMAC\text{-}SHA256}
-    (K,\text{``spend-to-sign/secret/v1''}\parallel
+    (K,\text{``utxo-ots/secret/v1''}\parallel
     \mathit{keyNonce}\parallel i\parallel j)
 \]
 
@@ -186,7 +186,7 @@ The detached-message profile computes
 \[
     d =
     \operatorname{SHA384}(
-    \text{``spend-to-sign/message/v1''}\parallel
+    \text{``utxo-ots/message/v1''}\parallel
     \operatorname{Encode}(\mathit{pkid})\parallel
     \operatorname{EncodeLength}(M)\parallel M).
 \]
@@ -439,7 +439,7 @@ not as a native Bitcoin spending rule. Candidate demonstrations include:
 - public randomness commitments with one-time branch selection;
 - a hash-only authorization input to a bridge or federation; and
 - an experimental policy overlay that rejects actions not accompanied by a
-  finalized Spend-to-Sign artifact.
+  finalized UTXO-OTS artifact.
 
 The first public demonstration should sign the paper source hash or a release
 manifest. It should not place meaningful funds under the experimental scheme.

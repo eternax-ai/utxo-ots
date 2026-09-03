@@ -7,19 +7,19 @@ use bitcoin::hashes::Hash;
 use bitcoin::{Address, Amount, OutPoint, Transaction, Txid};
 use clap::{Parser, Subcommand};
 use sha2::{Digest, Sha256};
-use spend_to_sign::keygen::SigningBank;
-use spend_to_sign::message::message_digits;
-use spend_to_sign::parameters::{
+use utxo_ots::keygen::SigningBank;
+use utxo_ots::message::message_digits;
+use utxo_ots::parameters::{
     KEY_NONCE_LEN, NetworkId, PARAMETER_SET_ID, P2WSH_DUST_SATS, PublicKeyId, SHARD_COUNT,
 };
-use spend_to_sign::script::shard_metrics;
-use spend_to_sign::transaction::{
+use utxo_ots::script::shard_metrics;
+use utxo_ots::transaction::{
     build_aggregate_publication, build_setup_outputs, build_setup_tx, tx_weight_report,
 };
-use spend_to_sign::verifier::verify_detached;
+use utxo_ots::verifier::verify_detached;
 
 #[derive(Parser, Debug)]
-#[command(name = "spend-to-sign", about = "P2WSH shard hash OTS (detached-message profile)")]
+#[command(name = "utxo-ots", about = "P2WSH shard hash OTS (detached-message profile)")]
 struct Cli {
     #[command(subcommand)]
     cmd: Cmd,
@@ -128,7 +128,7 @@ fn parse_nonce(master: &[u8], explicit: &Option<String>) -> [u8; KEY_NONCE_LEN] 
     }
     // Deterministic demo nonce — not for production entropy.
     let mut hasher = Sha256::new();
-    hasher.update(b"spend-to-sign/demo-nonce/v1");
+    hasher.update(b"utxo-ots/demo-nonce/v1");
     hasher.update(master);
     let d = hasher.finalize();
     let mut n = [0u8; KEY_NONCE_LEN];

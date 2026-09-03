@@ -32,7 +32,7 @@ def _cast_bool(v: bytes) -> bool:
 
 
 def exec_template(script: bytes, stack_init: list[bytes]) -> list[bytes]:
-    """Minimal interpreter sufficient for the Spend-to-Sign digit template."""
+    """Minimal interpreter sufficient for the UTXO-OTS digit template."""
     stack = [bytes(x) for x in stack_init]
     i = 0
     branch: list[dict] = []
@@ -102,7 +102,7 @@ def bool_el(bit: int) -> bytes:
 
 def make_bank(digits: int = 16):
     secrets = [
-        [hashlib.sha256(b"spend-to-sign/test" + bytes([i, j])).digest() for j in range(4)]
+        [hashlib.sha256(b"utxo-ots/test" + bytes([i, j])).digest() for j in range(4)]
         for i in range(digits)
     ]
     commits = [[hashlib.sha256(s).digest() for s in row] for row in secrets]

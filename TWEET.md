@@ -2,7 +2,7 @@
 
 ## Short
 
-Spend-to-Sign: post-quantum *attestations* on Bitcoin today — standard P2WSH shards, SHA-256 hashlocks only, no soft fork.
+UTXO-OTS: post-quantum *attestations* on Bitcoin today — standard P2WSH shards, SHA-256 hashlocks only, no soft fork.
 
 Not a PQ payment signature (consensus doesn’t bind the message). It *is* a ledger-finalized one-time hash signature with fragmented publication so witness harvesting can’t permanently kill it.
 
@@ -10,7 +10,7 @@ Regtest demo + Rust impl: <REPO_URL>
 
 ## Slightly longer
 
-We open-sourced Spend-to-Sign.
+We open-sourced UTXO-OTS.
 
 Idea: put a generalized Lamport one-time key in 12 native P2WSH outputs. Spend them to reveal branch preimages. Bitcoin checks openings; an overlay checks the message digest.
 

@@ -2,16 +2,16 @@
 
 use bitcoin::Amount;
 use bitcoin::hashes::Hash;
-use spend_to_sign::keygen::SigningBank;
-use spend_to_sign::message::message_digits;
-use spend_to_sign::parameters::{
+use utxo_ots::keygen::SigningBank;
+use utxo_ots::message::message_digits;
+use utxo_ots::parameters::{
     NetworkId, PARAMETER_SET_ID, PublicKeyId, SHARD_COUNT,
 };
-use spend_to_sign::script::shard_metrics;
-use spend_to_sign::transaction::{
+use utxo_ots::script::shard_metrics;
+use utxo_ots::transaction::{
     build_aggregate_publication, build_setup_outputs, tx_weight_report,
 };
-use spend_to_sign::verifier::verify_detached;
+use utxo_ots::verifier::verify_detached;
 
 #[test]
 fn aggregate_sign_and_verify() {
@@ -37,7 +37,7 @@ fn aggregate_sign_and_verify() {
         shard_count: SHARD_COUNT as u32,
         parameter_set_id: PARAMETER_SET_ID.to_string(),
     };
-    let msg = b"spend-to-sign phase1 demo";
+    let msg = b"utxo-ots phase1 demo";
     let digits = message_digits(&pkid, msg);
     let openings = bank.openings_for_digits(&digits).unwrap();
     let tx = build_aggregate_publication(setup_txid, first_vout, shard_sats, &bank, &openings)
@@ -73,5 +73,5 @@ fn wrong_message_fails() {
         .unwrap();
     let tx = build_aggregate_publication(setup_txid, 0, shard_sats, &bank, &openings).unwrap();
     let err = verify_detached(&pkid, b"beta", &outs, &bank.shard_scripts, &tx).unwrap_err();
-    assert!(matches!(err, spend_to_sign::Error::DigestMismatch));
+    assert!(matches!(err, utxo_ots::Error::DigestMismatch));
 }

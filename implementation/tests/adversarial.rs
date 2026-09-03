@@ -3,17 +3,17 @@
 use bitcoin::Amount;
 use bitcoin::hashes::Hash;
 use bitcoin::{ScriptBuf, TxOut};
-use spend_to_sign::keygen::SigningBank;
-use spend_to_sign::message::message_digits;
-use spend_to_sign::parameters::{
+use utxo_ots::keygen::SigningBank;
+use utxo_ots::message::message_digits;
+use utxo_ots::parameters::{
     NetworkId, PARAMETER_SET_ID, PublicKeyId, SHARD_COUNT,
 };
-use spend_to_sign::transaction::{
+use utxo_ots::transaction::{
     build_aggregate_publication, build_fragmented_publication, build_publication_for_shards,
     build_setup_outputs, copy_shard_witness_mutated_outputs,
 };
-use spend_to_sign::verifier::{collect_spends_from_txs, verify_detached, verify_detached_spend_set};
-use spend_to_sign::{BankRecord, BankStore, Error, expose_for_sign};
+use utxo_ots::verifier::{collect_spends_from_txs, verify_detached, verify_detached_spend_set};
+use utxo_ots::{BankRecord, BankStore, Error, expose_for_sign};
 
 fn bank() -> SigningBank {
     let mut nonce = [0u8; 16];

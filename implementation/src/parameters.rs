@@ -3,9 +3,9 @@
 use serde::{Deserialize, Serialize};
 
 /// Domain tag for secret derivation.
-pub const SECRET_DOMAIN: &[u8] = b"spend-to-sign/secret/v1";
+pub const SECRET_DOMAIN: &[u8] = b"utxo-ots/secret/v1";
 /// Domain tag for detached-message digests.
-pub const MESSAGE_DOMAIN: &[u8] = b"spend-to-sign/message/v1";
+pub const MESSAGE_DOMAIN: &[u8] = b"utxo-ots/message/v1";
 /// Parameter-set identifier string embedded in pkid encodings.
 pub const PARAMETER_SET_ID: &str = "sha384-w4-d16-s12-v1";
 
