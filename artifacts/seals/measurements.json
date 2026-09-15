@@ -1,0 +1,44 @@
+{
+  "aggregate_vb": 9168,
+  "aggregate_weight": 36669,
+  "consignment_bytes_1hop_with_carriers": 141418,
+  "consignment_bytes_1hop_without_carriers": 863,
+  "consignment_bytes_32hop_with_carriers": 2332375,
+  "consignment_bytes_8hop_with_carriers": 636065,
+  "fragmented_total_vb": 9398,
+  "funding": [
+    {
+      "per_shard_funding_sats": 1094,
+      "publication_fee_sats_aggregate": 9168,
+      "sat_per_vb": 1,
+      "setup_fee_sats": 567,
+      "setup_vb": 567
+    },
+    {
+      "per_shard_funding_sats": 4150,
+      "publication_fee_sats_aggregate": 45840,
+      "sat_per_vb": 5,
+      "setup_fee_sats": 2835,
+      "setup_vb": 567
+    },
+    {
+      "per_shard_funding_sats": 15610,
+      "publication_fee_sats_aggregate": 183360,
+      "sat_per_vb": 20,
+      "setup_fee_sats": 11340,
+      "setup_vb": 567
+    }
+  ],
+  "light_client_per_hop": {
+    "block_header_bytes": 80,
+    "carrier_witness_bytes_aggregate": 34619,
+    "merkle_inclusion_bytes_depth8": 256,
+    "note": "witness-commitment path, not txid path",
+    "witness_merkle_extra_bytes": 32
+  },
+  "resolver_ms_1hop": 38.739416,
+  "resolver_ms_32hop": 621.499959,
+  "resolver_ms_8hop": 167.36425,
+  "setup_vb": 567,
+  "setup_weight": 2268
+}
