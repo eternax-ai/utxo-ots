@@ -1,0 +1,160 @@
+{
+  "candidates": {
+    "fewer_shards_same_script": {
+      "digest": "SHA-256",
+      "note": "Birthday 2^128 classical / BHT ~2^85 quantum is below the sender-collision bar that keeps SHA-384.",
+      "per_shard_inside_limits": true,
+      "shards": 8,
+      "survives_item2_collision_bound": false
+    },
+    "more_digits_per_shard": {
+      "binding_limit": "201 counted opcodes",
+      "digits": 17,
+      "inside_limits": false
+    }
+  },
+  "limits": {
+    "MAX_OPS_PER_SCRIPT": 201,
+    "MAX_STANDARD_P2WSH_SCRIPT_SIZE": 3600,
+    "MAX_STANDARD_P2WSH_STACK_ITEMS": 100,
+    "MAX_STANDARD_P2WSH_STACK_ITEM_SIZE": 80
+  },
+  "radix4_packing": [
+    {
+      "counted_opcodes": 12,
+      "digits_per_shard": 1,
+      "inside_limits": true,
+      "opcode_headroom": 189,
+      "script_size": 145,
+      "witness_stack_items": 3
+    },
+    {
+      "counted_opcodes": 24,
+      "digits_per_shard": 2,
+      "inside_limits": true,
+      "opcode_headroom": 177,
+      "script_size": 289,
+      "witness_stack_items": 6
+    },
+    {
+      "counted_opcodes": 36,
+      "digits_per_shard": 3,
+      "inside_limits": true,
+      "opcode_headroom": 165,
+      "script_size": 433,
+      "witness_stack_items": 9
+    },
+    {
+      "counted_opcodes": 48,
+      "digits_per_shard": 4,
+      "inside_limits": true,
+      "opcode_headroom": 153,
+      "script_size": 577,
+      "witness_stack_items": 12
+    },
+    {
+      "counted_opcodes": 60,
+      "digits_per_shard": 5,
+      "inside_limits": true,
+      "opcode_headroom": 141,
+      "script_size": 721,
+      "witness_stack_items": 15
+    },
+    {
+      "counted_opcodes": 72,
+      "digits_per_shard": 6,
+      "inside_limits": true,
+      "opcode_headroom": 129,
+      "script_size": 865,
+      "witness_stack_items": 18
+    },
+    {
+      "counted_opcodes": 84,
+      "digits_per_shard": 7,
+      "inside_limits": true,
+      "opcode_headroom": 117,
+      "script_size": 1009,
+      "witness_stack_items": 21
+    },
+    {
+      "counted_opcodes": 96,
+      "digits_per_shard": 8,
+      "inside_limits": true,
+      "opcode_headroom": 105,
+      "script_size": 1153,
+      "witness_stack_items": 24
+    },
+    {
+      "counted_opcodes": 108,
+      "digits_per_shard": 9,
+      "inside_limits": true,
+      "opcode_headroom": 93,
+      "script_size": 1297,
+      "witness_stack_items": 27
+    },
+    {
+      "counted_opcodes": 120,
+      "digits_per_shard": 10,
+      "inside_limits": true,
+      "opcode_headroom": 81,
+      "script_size": 1441,
+      "witness_stack_items": 30
+    },
+    {
+      "counted_opcodes": 132,
+      "digits_per_shard": 11,
+      "inside_limits": true,
+      "opcode_headroom": 69,
+      "script_size": 1585,
+      "witness_stack_items": 33
+    },
+    {
+      "counted_opcodes": 144,
+      "digits_per_shard": 12,
+      "inside_limits": true,
+      "opcode_headroom": 57,
+      "script_size": 1729,
+      "witness_stack_items": 36
+    },
+    {
+      "counted_opcodes": 156,
+      "digits_per_shard": 13,
+      "inside_limits": true,
+      "opcode_headroom": 45,
+      "script_size": 1873,
+      "witness_stack_items": 39
+    },
+    {
+      "counted_opcodes": 168,
+      "digits_per_shard": 14,
+      "inside_limits": true,
+      "opcode_headroom": 33,
+      "script_size": 2017,
+      "witness_stack_items": 42
+    },
+    {
+      "counted_opcodes": 180,
+      "digits_per_shard": 15,
+      "inside_limits": true,
+      "opcode_headroom": 21,
+      "script_size": 2161,
+      "witness_stack_items": 45
+    },
+    {
+      "counted_opcodes": 192,
+      "digits_per_shard": 16,
+      "inside_limits": true,
+      "opcode_headroom": 9,
+      "script_size": 2305,
+      "witness_stack_items": 48
+    },
+    {
+      "counted_opcodes": 204,
+      "digits_per_shard": 17,
+      "inside_limits": false,
+      "opcode_headroom": -3,
+      "script_size": 2449,
+      "witness_stack_items": 51
+    }
+  ]
+}

@@ -11,6 +11,11 @@ implementation/target/
 artifacts/regtest/bitcoincore/
 artifacts/regtest/*.master
 artifacts/regtest/demo.master
+artifacts/seals/*.hex
+artifacts/seals/*.tx
+artifacts/seals/*.txid
+artifacts/seals/genesis.json
+artifacts/seals/transfer.json
 **/*.cookie
 **/*.pid
 
